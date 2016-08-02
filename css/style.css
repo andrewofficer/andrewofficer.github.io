@@ -5,9 +5,9 @@
 body {
 		overflow:hidden;
     color: #424242;
-    font-family: "proxima-nova-alt",Georgia,Times,"Times New Roman",serif;
+    font-family: "freight-macro-pro",Georgia,Times,"Times New Roman",serif;
     font-size: 100%;
-    line-height: 1.4;
+    line-height: 1.2;
 		padding: 10px;
 }
 
@@ -30,7 +30,7 @@ a, a:visited {
 	transition:.5s;
 }
 
-a:hover  { color:#CE1FA8; text-decoration: underline; }
+a:hover  { background-color: #FFE4FB; color:#CE1FA8; text-decoration: underline; }
 
 
 ul { margin: 0; padding: 0; list-style: none; }
@@ -64,6 +64,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .middle {
     display: table-cell;
     vertical-align: middle;
+		padding-bottom: 100px;
 }
 
 .innerr {
@@ -74,14 +75,16 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .primary {
 	background-color: #efefef;
-	color: #c2c2c2;
+	color: #b2b2b2;
 	padding: 1em 1em;
 	margin-top: -0.5em;
 	position: fixed;
 	top: 80%;
-	font-size: 1em;
+	font-size: 1.5em;
+}
 
-
+.slidewrap a:hover {
+	text-decoration: none;
 }
 
 @media (min-width: 600px) {
