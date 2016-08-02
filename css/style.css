@@ -22,7 +22,7 @@ a {
 }
 
 a, a:visited {
-	color:#A30D8D;
+	color:#8E3581;
 	-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
@@ -30,7 +30,7 @@ a, a:visited {
 	transition:.5s;
 }
 
-a:hover  { background-color: #FFE4FB; color:#CE1FA8; text-decoration: underline; }
+a:hover  { background-color: #FFE4FB; color:#8E3581; text-decoration: underline; }
 
 
 ul { margin: 0; padding: 0; list-style: none; }
