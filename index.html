@@ -1,59 +1,110 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-<style type="text/css"></style>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css">
+		<title>Andrew Officer | Digital Product Designer</title>
+		<meta name="description" content="Andrew Officer - Senior UX, UI & Product Designer in London, UK" />
 
-<title>Andrew Officer | Digital Product Designer</title>
+		<script src="https://use.typekit.net/zsy2jun.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head>
+	<body>
 
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="Description" content="The design portfolio of Andrew Officer, UK, London based Designer" />
-<meta name="Keywords" content="Andrew Officer" />
-<meta name="Title" content="Andrew Officer - Product Designer" />
+	<div class="outer">
+		<div class="middle">
+				<div class="slidewrap">
+					<ul class="slidecontrols">
+						<li><a href="#sliderName" class="next primary">→</a></li>
+						<li><a href="#sliderName" class="prev primary">←</a></li>
+					</ul>
 
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-
-<script type="text/javascript" src="./jquery-1.7.2.min.js"></script>
-<script src="//use.typekit.net/xbw2icj.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
-
-<link href="./main.css" media="screen" type="text/css" rel="stylesheet" />
-<!--[if IE 6]>
-<link rel="stylesheet" type="text/css" href="./CSS/ie6.css" />
-<![endif]-->
-<!--[if IE 7]>
-<link rel="stylesheet" type="text/css" href="./CSS/ie7.css" />
-<![endif]-->
-</head>
-
-<script type="text/javascript">
-$(window).load(function() {
-	$('.fadein').fadeIn(2000);
-});
-</script>
-
-<body>
-
-<div id="wrapper">
-	<div id="main">
-	<!-- BEGIN intro -->
-		<div id="intro">
-			<div id="left" class="fadeInUp animated">
-				<h1 class="tk-museo-slab">Andrew Officer</h1>
-				<h2 class="tk-museo-slab">Digital Product Designer</h2>
-					<div id="nav" class="fadeInUp animated">
-						<p class="">contact me: <a id="contact" href="mailto:ux@andrewofficer.com">andrewofficer@gmail.com</a></p>
-					</div>
-			</div>
-			<div id="right">
-				<div id="social" class="fadeInUp animated">
-						<a href="http://uk.linkedin.com/pub/andrew-officer/13/2a9/535">linkedin</a>
-						<a href="http://twitter.com/andrewofficer">twitter</a>
-						<a href="http://www.quora.com/Andrew-Officer">quora</a>
-				</div>
-			</div>
+					<ul class="slider" id="sliderName">
+						<li class="slide">
+							<div class="textblock">
+								<h2 class="slidehed">Hi, my name is Andrew Officer, <br>I'm a user experience designer.</h2>
+								<a href="#sliderName" class="next">So what do you do?</a>
+							</div>
+						</li>
+						<li class="slide">
+							<div class="textblock">
+								<h2 class="slidehed">I help companies design and build products people love.</h2>
+								<a href="#sliderName" class="next">What does that mean?</a>
+							</div>
+						</li>
+						<li class="slide">
+							<div class="textblock">
+								<h2 class="slidehed">My goal is to make human lives easier through tactile, intuitive and thoughtful design.</h2>
+								<a href="#sliderName" class="next">Okay wise guy, how so?</a>
+							</div>
+						</li>
+						<li class="slide">
+							<div class="textblock">
+								<h2 class="slidehed">Simplicity is key, whilst putting users at the core of everything I do.</h2>
+								<a href="#sliderName" class="next">What's next then?</a>
+							</div>
+						</li>
+						<li class="slide">
+							<div class="textblock">
+								<h2 class="slidehed">I'm looking for new and exciting projects anywhere in the world.</h2>
+								<a href="#sliderName" class="next">Where?</a>
+							</div>
+						</li>
+						<li class="slide">
+							<div class="textblock">
+								<h2 class="slidehed"><a href="mailto:andrewofficer@gmail.com?Subject=Whats%20up">Get in touch</a>, connect with me on <a href="https://www.linkedin.com/in/andrewofficer">Linkedin</a> or follow me on <a href="https://twitter.com/AndrewOfficer">Twitter</a>.</h2>
+								<p>&nbsp;</p>
+								<p>&nbsp;</p>
+							</div>
+						</li>
+					</ul>
+				</div><!-- slidewrap -->
 		</div>
-	<!-- END intro -->
+	</div>
 
-</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="plugin.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#carousel-1-0-tab0").focus();
+			console.log("LOLLOLOL");
+			$('.slidewrap').carousel({
+				slider: '.slider',
+				slide: '.slide',
+				slideHed: '.slidehed',
+				nextSlide : '.next',
+				prevSlide : '.prev',
+				addPagination: true,
+				addNav : false
+			});
+
+			$('.slidewrap2').carousel({
+				slider: '.slider',
+				slide: '.slide',
+				addNav: false,
+				addPagination: true,
+				speed: 300 // ms.
+			});
+
+			$('.slidewrap3').carousel({
+					namespace: "mr-rotato" // Defaults to “carousel”.
+				})
+				.bind({
+					'mr-rotato-beforemove' : function() {
+						$('.events').append("<li>“beforemove” event fired.</li>");
+					},
+					'mr-rotato-aftermove' : function() {
+						$('.events').append("<li>“aftermove” event fired.</li>");
+					}
+				})
+				.after('<ul class="events">Events</ul>');
+		});
+	</script>
+	</body>
 </html>
-
